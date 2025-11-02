@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Tecmave - Servicios Automotrices de Excelencia</title>
+
+    <!-- CSS NUEVO Alpha Style -->
+    <link rel="stylesheet" href="../assets/css/disney-style.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- AOS Library for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+</head>
+<body>
+    <!-- Header estilo Alpha -->
+    <header class="alpha-header">
+        <nav class="alpha-nav">
+            <div class="nav-brand">
+                <div class="logo">
+                    <img src="../assets/img/tecmave_logo_innovacion.jpg" alt="Tecmave Logo">
+                </div>
+                <h1>TECMAVE</h1>
+            </div>
+
+            <div class="nav-menu">
+                <a href="#inicio" class="nav-link active" data-lang="nav_inicio">Inicio</a>
+                <a href="#servicios" class="nav-link" data-lang="nav_servicios">Servicios</a>
+                <a href="#nosotros" class="nav-link" data-lang="nav_nosotros">Nosotros</a>
+                <a href="#testimonios" class="nav-link" data-lang="nav_testimonios">Testimonios</a>
+                <a href="#contacto" class="nav-link" data-lang="nav_contacto">Contacto</a>
+            </div>
+
+            <div class="nav-actions">
+                <button id="language-toggle" class="btn-icon">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <button id="theme-toggle" class="btn-icon">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <a href="tel:+50622223333" class="nav-phone">
+                    <i class="fas fa-phone"></i>
+                    +506 2222-3333
+                </a>
+                <a href="../login.html" class="btn-primary" data-lang="nav_acceder">Acceder</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section estilo Alpha -->
+    <section id="inicio" class="alpha-hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-badge" data-aos="fade-up" data-aos-delay="200">
+                    <span data-lang="hero_badge">★ TALLER CERTIFICADO</span>
+                </div>
+
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300" data-lang="hero_title">
+                    Expertos en <span class="text-highlight">Servicios Automotrices</span>
+                </h1>
+
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="400" data-lang="hero_description">
+                    Más de 15 años brindando soluciones confiables para tu vehículo.
+                    Tecnología de vanguardia y atención personalizada.
+                </p>
+
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                    <div class="stat">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label" data-lang="stat_experience">Años Experiencia</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label" data-lang="stat_repaired">Vehículos Reparados</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label" data-lang="stat_crane">Servicio de Grúa</div>
+                    </div>
+                </div>
+
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="600">
+                    <button class="btn-hero-primary" data-lang="btn_schedule">
+                        <i class="fas fa-calendar-check"></i>
+                        AGENDAR CITA
+                    </button>
+                    <button class="btn-hero-secondary" data-lang="btn_call_now">
+                        <i class="fas fa-phone"></i>
+                        LLAMAR AHORA
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000">
+                <div class="hero-image">
+                    <img src="../assets/img/tecmave_exterior_1.jpg" alt="Taller Tecmave">
+                    <div class="image-overlay"></div>
+                </div>
+                <!-- CORREGIDO: Card con enlace a login -->
+                <a href="../login.html" class="floating-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4>Diagnóstico Gratis</h4>
+                    <p>Evaluación completa sin costo</p>
+                    <div class="card-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Destacados -->
+    <section id="servicios" class="services-alpha">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-subtitle">Soluciones integrales para el cuidado de tu vehículo</p>
+            </div>
+
+            <div class="services-grid-alpha">
+                <div class="service-card-alpha" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3>Mecánica General</h3>
+                    <p>Reparación y mantenimiento completo del motor y sistemas mecánicos</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Cambio de aceite</li>
+                        <li><i class="fas fa-check"></i> Reparación de motor</li>
+                        <li><i class="fas fa-check"></i> Sistema de frenos</li>
+                        <li><i class="fas fa-check"></i> Suspensión</li>
+                    </ul>
+                    <button class="btn-service-alpha">
+                        Saber Más <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="service-card-alpha" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Diagnóstico Computarizado</h3>
+                    <p>Tecnología avanzada para identificar problemas electrónicos</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Escaneo computarizado</li>
+                        <li><i class="fas fa-check"></i> Programación de módulos</li>
+                        <li><i class="fas fa-check"></i> Reparación eléctrica</li>
+                        <li><i class="fas fa-check"></i> Actualizaciones</li>
+                    </ul>
+                    <button class="btn-service-alpha">
+                        Saber Más <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="service-card-alpha" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Electricidad Automotriz</h3>
+                    <p>Especialistas en sistemas eléctricos y electrónicos</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Sistema de carga</li>
+                        <li><i class="fas fa-check"></i> Iluminación y luces</li>
+                        <li><i class="fas fa-check"></i> Centrales y módulos</li>
+                        <li><i class="fas fa-check"></i> Instalación</li>
+                    </ul>
+                    <button class="btn-service-alpha">
+                        Saber Más <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2>Sobre Nosotros</h2>
+                    <p>En Tecmave nos dedicamos a brindar servicios automotrices de la más alta calidad. Con más de 15 años de experiencia, hemos establecido un estándar de excelencia en el cuidado y mantenimiento de vehículos.</p>
+                    <p>Nuestro equipo de técnicos certificados está comprometido con ofrecer soluciones confiables y eficientes para todas las marcas y modelos de vehículos.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-award"></i>
+                            <span>Certificación internacional</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-users"></i>
+                            <span>Equipo especializado</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Garantía en todos los servicios</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="../assets/img/tecmave_exterior_2.jpg" alt="Nuestro Taller">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section id="testimonios" class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+                <p class="section-subtitle">Experiencias reales de clientes satisfechos</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Excelente servicio! Repararon mi vehículo en tiempo récord y con una calidad impresionante. Definitivamente mi taller de confianza.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>María Rodríguez</h4>
+                            <span>Cliente desde 2020</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>El diagnóstico computarizado detectó un problema que otros talleres no pudieron encontrar. Muy profesionales y transparentes.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Méndez</h4>
+                            <span>Cliente desde 2021</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Servicio de grúa 24/7 me salvó en una emergencia. Rápidos, eficientes y con precios justos. Los recomiendo totalmente.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Fernández</h4>
+                            <span>Cliente desde 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-content">
+                <div class="video-text" data-aos="fade-right">
+                    <h2>Tecnología de Vanguardia</h2>
+                    <p>Contamos con equipos de última generación para garantizar el mejor servicio para tu vehículo. Nuestro taller está equipado con tecnología moderna y personal capacitado.</p>
+                    <div class="video-features">
+                        <div class="video-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Equipos de diagnóstico avanzado</span>
+                        </div>
+                        <div class="video-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Técnicos certificados</span>
+                        </div>
+                        <div class="video-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Repuestos de calidad</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-container" data-aos="fade-left">
+                    <div class="video-wrapper">
+                        <iframe
+                            width="100%"
+                            height="315"
+                            src="https://www.youtube.com/embed/6R1gU2aVq_c"
+                            title="Taller Mecánico Moderno"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section class="features-alpha">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item-alpha" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Garantía en Servicios</h4>
+                    <p>Todos nuestros trabajos incluyen garantía escrita</p>
+                </div>
+
+                <div class="feature-item-alpha" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>Servicio Rápido</h4>
+                    <p>Diagnóstico rápido y tiempos de entrega optimizados</p>
+                </div>
+
+                <div class="feature-item-alpha" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4>Equipo Moderno</h4>
+                    <p>Tecnología de punta para mejores resultados</p>
+                </div>
+
+                <div class="feature-item-alpha" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h4>Expertos Certificados</h4>
+                    <p>Personal capacitado y con experiencia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contacto" class="cta-alpha">
+        <div class="container">
+            <div class="cta-content-alpha" data-aos="zoom-in">
+                <h2>¿Necesitas ayuda con tu vehículo?</h2>
+                <p>Contáctanos hoy mismo y recibe una cotización gratuita</p>
+                <div class="cta-actions-alpha">
+                    <button class="btn-cta-primary">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </button>
+                    <button class="btn-cta-secondary">
+                        <i class="fas fa-phone"></i>
+                        Llamar Ahora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-v2" id="site-footer"></footer>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/disney-script.js"></script>
+    <script defer src="../assets/js/footer-config.js"></script>
+    <script src="../assets/js/theme-switcher.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+</body>
+</html>

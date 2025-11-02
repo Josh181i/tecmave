@@ -1,0 +1,23 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .alpha-header {
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .alpha-nav h1,
+body.dark-mode .alpha-nav .nav-link {
+    color: #ffffff;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #bb86fc;
+    color: #000000;
+}
+
+body.dark-mode .btn-icon {
+    color: #ffffff;
+}
