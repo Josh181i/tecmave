@@ -473,26 +473,41 @@
       }
     }
 
+    // Variable global para mantener la instancia del gráfico modal
+    let modalChartInstance = null;
+
     function openChartModal(chartId) {
       const modal = document.getElementById('chartModal');
-      const chart = Chart.getChart(chartId);
-      const modalChartCtx = document.getElementById('modalChart');
+      const originalChart = Chart.getChart(chartId);
+      const modalChartCtx = document.getElementById('modalChart').getContext('2d');
 
-      if (modal && chart && modalChartCtx) {
-        new Chart(modalChartCtx, {
-          type: chart.config.type,
-          data: chart.config.data,
-          options: chart.config.options
-        });
+      if (modal && originalChart && modalChartCtx) {
+        // Si ya existe un gráfico en el modal, destrúyelo primero
+        if (modalChartInstance) {
+          modalChartInstance.destroy();
+        }
+
+        // Clona la configuración para el nuevo gráfico
+        const config = {
+          type: originalChart.config.type,
+          data: originalChart.config.data,
+          options: {
+            ...originalChart.config.options, // Copia las opciones originales
+            responsive: true, // Asegura que sea responsivo
+            maintainAspectRatio: true // Mantiene la proporción para evitar el crecimiento infinito
+          }
+        };
+
+        modalChartInstance = new Chart(modalChartCtx, config);
         modal.style.display = 'flex';
       }
     }
 
     function closeChartModal() {
       const modal = document.getElementById('chartModal');
-      const modalChart = Chart.getChart('modalChart');
-      if (modal && modalChart) {
-        modalChart.destroy();
+      if (modal && modalChartInstance) {
+        modalChartInstance.destroy();
+        modalChartInstance = null; // Limpia la referencia
         modal.style.display = 'none';
       }
     }
